@@ -117,7 +117,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 		tripBookingRepository2.save(tripBooking);
 
-		driverRepository2.save(driver);
+
 
 
 	}
