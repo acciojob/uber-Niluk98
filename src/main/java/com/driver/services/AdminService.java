@@ -12,6 +12,8 @@ public interface AdminService {
 
 	public Admin updatePassword(Integer adminId, String password);
 
+
+
 	public void deleteAdmin(int adminId);
 
 	public List<Driver> getListOfDrivers();
