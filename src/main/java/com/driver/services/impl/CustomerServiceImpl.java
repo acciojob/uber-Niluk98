@@ -51,14 +51,18 @@ public class CustomerServiceImpl implements CustomerService {
 
 		Driver available_driver=null;
 		for(Driver driver:drivers){
-			Cab cab=driver.getCab();
-			if(cab!=null){
-				if(cab.getAvailable()){
-					available_driver=driver;
-					break;
+			if(driver!=null){
+				Cab cab=driver.getCab();
+				if(cab!=null){
+					if(cab.getAvailable()){
+						available_driver=driver;
+						break;
+					}
+
 				}
 
 			}
+
 
 		}
 		if (available_driver==null){
