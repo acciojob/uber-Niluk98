@@ -64,7 +64,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 		}
 		if (available_driver==null){
-			throw new Exception("No driver is available");
+			throw new Exception("No cab available!");
 		}
 		available_driver.getCab().setAvailable(false);
 		TripBooking tripBooking=new TripBooking();
