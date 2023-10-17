@@ -31,7 +31,7 @@ public class CustomerServiceImpl implements CustomerService {
 		Customer customer1=new Customer();
 		customer1.setMobile(customer.getMobile());
 		customer1.setPassword(customer.getPassword());
-		customer1.setTripBookings(null);
+
 		customerRepository2.save(customer1);
 	}
 
