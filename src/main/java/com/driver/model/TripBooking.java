@@ -23,7 +23,7 @@ public class TripBooking {
         return tripId;
     }
 
-    public void setTripId(int tripId) {
+    public void setTripBookingId(int tripId) {
         this.tripId = tripId;
     }
 
@@ -51,11 +51,11 @@ public class TripBooking {
         this.distanceInKm = distanceInKm;
     }
 
-    public TripStatus getTripStatus() {
+    public TripStatus getStatus() {
         return tripStatus;
     }
 
-    public void setTripStatus(TripStatus tripStatus) {
+    public void setStatus(TripStatus tripStatus) {
         this.tripStatus = tripStatus;
     }
 
@@ -77,6 +77,10 @@ public class TripBooking {
 
     public Driver getDriver() {
         return driver;
+    }
+
+    public int getTripId() {
+        return tripId;
     }
 
     public void setDriver(Driver driver) {

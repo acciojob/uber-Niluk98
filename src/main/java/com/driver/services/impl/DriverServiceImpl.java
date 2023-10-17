@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import com.driver.model.Driver;
 import com.driver.repository.DriverRepository;
 
-import java.util.ArrayList;
 import java.util.Optional;
 
 @Service
@@ -57,7 +56,7 @@ public class DriverServiceImpl implements DriverService {
 		Optional<Driver> optionalDriver=driverRepository3.findById(driverId);
 
 		Driver driver=optionalDriver.get();
-		driver.getCab().setAvailable(!driver.getCab().isAvailable());
+		driver.getCab().setAvailable(!driver.getCab().getAvailable());
 		driverRepository3.save(driver);
 
 
